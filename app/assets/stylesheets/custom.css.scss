@@ -1,4 +1,25 @@
 @import "bootstrap";
+
+.intro {
+    
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(logo.jpg) no-repeat center center scroll;
+    background-color: #ffff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size:100% auto;
+    -o-background-size: cover;
+}
+
+.intro-body {
+    display: table-cell;
+    vertical-align: middle;
+    color: #FFF000
+}
 /*!
  * Bootswatch v3.1.1+1
  * Homepage: http://bootswatch.com
