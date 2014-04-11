@@ -3,7 +3,7 @@ class TwilioController < ApplicationController
   ACCOUNT_SID = 'AC88068d1ee49052acdc5a8bc1e1ef8b51'
   ACCOUNT_TOKEN = '3029f8f189ab401f6f22961317f4dc5e'
   
-  include Webhookable
+  
  
   after_filter :set_header
  
