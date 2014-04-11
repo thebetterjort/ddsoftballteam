@@ -1,7 +1,7 @@
 class TwilioController < ApplicationController
   skip_before_filter :verify_authenticity_token
-  ACCOUNT_SID = 'AC88068d1ee49052acdc5a8bc1e1ef8b51'
-  ACCOUNT_TOKEN = '3029f8f189ab401f6f22961317f4dc5e'
+  ACCOUNT_SID = 'AC88068d1ee49052acdc5a8bc1e1ef8b5e'
+  ACCOUNT_TOKEN = '3029f8f189ab401f6f22961317f4dc51'
   
   include Webhookable
  
