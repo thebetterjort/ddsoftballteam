@@ -10,7 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'twilio-ruby'
 #Bootstrap Gems
-gem "twitter-bootstrap-rails"
+gem 'bootstrap-sass', '2.3.2.0'
 gem 'devise'
 
 gem 'rails_12factor', group: :production
