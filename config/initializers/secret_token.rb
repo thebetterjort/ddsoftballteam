@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-dd::Application.config.secret_key_base = secure_token
+Dd::Application.config.secret_key_base = secure_token
