@@ -12,7 +12,7 @@ class TwilioController < ApplicationController
     response = Twilio::TwiML::Response.new do |r|
       r.Say "Our next game will be on field #{@games.field} at #{@game.start_at}. We are going to beat the shit out of #{@game.opponent}", :voice => 'alice'
          r.Play 'http://linode.rabasa.com/cantina.mp3'
-      r.Dial '14178802516'
+     
     end
  
     render_twiml response
