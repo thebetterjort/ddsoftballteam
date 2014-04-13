@@ -8,7 +8,7 @@ class TwilioController < ApplicationController
   after_filter :set_header
  
   def voice
-    @game = Game.first
+    @game = Game.last
     response = Twilio::TwiML::Response.new do |r|
       r.Say "Our next game will be on field #{@games.field} at #{@game.start_at}. We are going to beat the shit out of #{@game.opponent}", :voice => 'alice'
          r.Play 'http://linode.rabasa.com/cantina.mp3'
@@ -20,7 +20,7 @@ class TwilioController < ApplicationController
 
 
   def sms
-    @game = Game.first
+    @game = Game.last
     render 'sms.xml.erb', :content_type => 'text/xml'
   end
 
