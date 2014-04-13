@@ -10,7 +10,7 @@ class TwilioController < ApplicationController
   def voice
     @game = Game.last
     response = Twilio::TwiML::Response.new do |r|
-      r.Say "Our next game will be on field #{@games.field} at #{@game.start_at}. We are going to beat the shit out of #{@game.opponent}", :voice => 'alice'
+      r.Say "Our next game will be on field #{@game.field} at #{@game.start_at}. We are going to beat the shit out of #{@game.opponent}", :voice => 'alice'
          r.Play 'http://linode.rabasa.com/cantina.mp3'
      
     end
