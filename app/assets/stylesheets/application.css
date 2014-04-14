@@ -9,5 +9,11 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+//= require bootstrap
  *= require_tree .
  */
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
+
+
